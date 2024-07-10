@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汽车灯光使用规则问答</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>汽车灯光使用规则问答</h1>
+        <button class="start-btn">开始答题</button>
+        <div class="quiz" style="display: none;">
+            <p class="question"></p>
+            <div class="options">
+                <button class="option-btn" data-answer="近光灯">近光灯 <img src="icons/near_light.png" alt="近光灯图标" class="image"></button>
+                <button class="option-btn" data-answer="远光灯">远光灯 <img src="icons/far_light.png" alt="远光灯图标" class="image"></button>
+                <button class="option-btn" data-answer="远近光交替">远近光交替<img src="icons/near_light.png" alt="近光灯图标" class="image"><img src="icons/far_light.png" alt="远光灯图标" class="image"></button>
+                <button class="option-btn" data-answer="示廓灯">示廓灯 <img src="icons/position_light.png" alt="示廓灯图标" class="position_light"></button>
+            </div>
+            <p class="feedback"></p>
+            <div class="navigation">
+                <button class="prev-btn">上一题</button>
+                <button class="next-btn">下一题</button>
+            </div>
+            <p class="accuracy">正确率: 0%</p>
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
+</body>
+</html>
